@@ -10,7 +10,7 @@ function renderProducto() {
   <h2 class="colorFuente roboto-bold">${producto.nombre}</h2>
   <p class="colorFuente roboto-medium">${producto.descripcion}</p>
   <p class="colorFuente roboto-bold">$${producto.precio}</p>
-  <p><button class="btn colorFondo2 position-relative" onclick="agregarProductoAlCart()" >(+) Agregar </button></p>
+  <p><button class="btn colorFondo2 position-relative" onclick="agregarProductoAlCart()" >Agregar al carrito</button></p>
   </div>
   </div>`;
 

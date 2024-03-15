@@ -79,9 +79,14 @@ body{
 }
 
 .colorFondo2{
-  background-color:#F8F9FA;
+  background-color:#DC3545;
 }
 
 .colorFuente{
     color: black;
+    
+}
+
+.colorFuente:hover{
+  color: #DC3545;
 }
