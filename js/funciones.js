@@ -1,141 +1,195 @@
-// Lista de productos(detalles de cada producto)
 const productos = [
   {
     id: 1,
-    nombre: "TrueMade Whey Protein",
+    nombre: "Sachet Classic Whey Protein 907g - ONE FIT",
     imagen:
-      "https://www.enasport.com/cdn/shop/files/7792981060021_2_f1b5bea7-4b41-47cc-acd7-c855169e2cb7_800x.jpg?v=1699874513",
+      "https://acdn.mitiendanube.com/stores/002/792/557/products/sachet-classic-whey-protein-one-fit-chocolate-ba2f7a30c3089bf3f417044759147383-1024-1024.webp",
     descripcion:
-      "Whey Protein Isolate (WPI) es la forma más pura de proteína de suero que existe actualmente. Al sumarla a nuestra fórmula clásica (WPC + WPI) elevamos el estándar de calidad, asegurándote un mejor producto en cada scoop para que logres la performance que buscas.",
-    precio: 18000,
+      "Nuestra Classic Whey Protein fue creada pensando en brindar a los deportistas resultados reales, ya que permite mejorar la recuperación de los músculos y aumentar la concentración de proteínas en el cuerpo, favoreciendo así el aumento de la masa muscular.",
+    precio: 25000,
+    categoria: "proteinas",
   },
   {
     id: 2,
-    nombre: "Creatina Micronizada",
+    nombre: "Creatina Micronizada (200 gr.) (40 sv.) - ONE FIT",
     imagen:
-      "https://www.enasport.com/cdn/shop/products/Creatina_Micronizada_neutra_800x.jpg?v=1706886860",
+      "https://acdn.mitiendanube.com/stores/002/792/557/products/one-fit-creatina-micronizada_1-c4f904526682d5643616752254196193-1024-1024.webp",
     descripcion:
-      "Nuestra CREATINA MICRONIZADA es un excelente suplemento pre entrenamiento ya que colabora en la formación de los componentes energéticos, mejora la potencia muscular y retrasa la fatiga muscular, preparando al cuerpo para un mejor rendimiento físico Ha sido demostrado que apoya el crecimiento del tamaño de los músculos, y el aumento de fuerza y poder cuando se la combina con actividades de alta intensidad.",
-    precio: 30500,
+      "La creatina es uno de los complementos deportivos más conocidos y su principal objetivo es fortalecer el tejido muscular. Es producida de forma natural por el cuerpo y está presente en alimentos como el pescado, la carne, los lácteos y el huevo. Su consumo a través de suplementos puede contribuir a un mayor rendimiento en actividades físicas que requieran intervalos de fuerza cortos e intensos, como el levantamiento de pesas y otros deportes de alto desgaste que requieren una recuperación más rápida.",
+    precio: 22000,
+    categoria: "creatinas",
   },
   {
     id: 3,
-    nombre: "Whey X Pro",
+    nombre: "Combo One Fit DOYPACK",
     imagen:
-      "https://www.enasport.com/cdn/shop/products/Whey_xpro_vainilla_800x.jpg?v=1685711301",
-    descripcion:
-      "Whey X Pro Complex Protein aporta una combinación explosiva de proteínas, creatina, aminoácidos, vitaminas, minerales y antioxidantes, en una nueva fórmula mejorada. Aporta más sabor y una máxima disolución para lograr mejores resultados y la podés consumir antes o después del entrenamiento. Es la proteína de suero más avanzada del mercado.",
-    precio: 39800,
+      "https://stiersuplementos.ar/wp-content/uploads/2023/11/WhatsApp-Image-2023-12-18-at-15.00.48.jpeg",
+    descripcion: "Proteina One fit de 2lbs sabor a elección EN DOYPACK  + creatina monohidratada y micronizada one fit 200 gr (40 servicios) saborizada, con agregados de aminoácidos. Combo precio/calidad intermedio, lo mejor que vas a conseguir en ese precio",
+    precio: 42300,
+    categoria: "combos",
   },
   {
     id: 4,
-    nombre: "Pre War",
+    nombre: "Proteína Whey Pro 2.0 X 1kg - Nutrilab",
     imagen:
-      "https://www.enasport.com/cdn/shop/products/Prewar_Fruit_800x.jpg?v=1640023916",
-    descripcion:
-      "PRE WAR es la siguiente evolución en pre entrenamientos. Diseñado con precisión para desafiar tus límites, favorece la concentración, el aumento de energía, la fuerza, el tamaño muscular y la recuperación. Entrena con nuestro Pre work más completo y con fórmula mejorada con 200mg de cafeína por ingesta.",
-    precio: 26000,
+      "https://http2.mlstatic.com/D_NQ_NP_869657-MLA72779066942_112023-O.webp",
+    descripcion: "Gracias a su contenido de proteína contribuye a mantener la masa muscular y huesos sanos, así como el crecimiento de la misma.La materia prima utilizada es de altísima calidad, debido al proceso de secado a baja temperatura y la tecnología de la ultra dilatación cruzada, las proteínas conservan su forma natural, de fácil absorción, sin someterla a ningún cambio químico.",
+    precio: 18000,
+    categoria: "proteinas",
   },
   {
     id: 5,
-    nombre: "Re Load",
+    nombre: "Creatina Crea Shock X 300gr - Nutrilab",
     imagen:
-      "https://www.enasport.com/cdn/shop/products/Reload_Fruit_800x.jpg?v=1683514967",
+      "https://http2.mlstatic.com/D_NQ_NP_874220-MLA72855995369_112023-O.webp",
     descripcion:
-      "RELOAD es lo último en post entrenamiento. Ideal para después de un entrenamiento intenso. Te traemos el mejor ratio de BCAA (2:1:1) con la cantidad exacta que necesitas para recuperarte más rápido y volver nuevamente al juego.",
-    precio: 18000,
+      "CREA SHOCK x300gr - NUTRIAB-Aumenta la capacidad de realizar ejercicios de alta intensidad y recuperarse en lapsos cortos, logrando mejores entrenamientos. Sintiendo como incrementa tu rendimiento físico.",
+    precio: 16000,
+    categoria: "creatinas",
   },
   {
     id: 6,
-    nombre: "Truemade Amino Full",
+    nombre: "Combo Nutrilab",
     imagen:
-      "https://www.enasport.com/cdn/shop/files/Truemade_Amino_Full_0c56c67e-45fd-4b6f-8bc6-c18db5ec5750_800x.jpg?v=1685712300",
-    descripcion:
-      "AMINO FULL contiene una combinación de aminoácidos de cadena ramificada (Leucina, Isoleucina, Valina) en un ratio 2:1:1; que son indispensables para el desarrollo y una mejor y más rápida recuperación de la masa muscular. La fórmula se complementa con L- Citrulina y L-Glutamina, ayudando a reducir la fatiga, ya que mantienen a las células en buen estado y trabajan sobre la reparación tejidos; ideales para mejorar el rendimiento, ganar fuerza y masa muscular.",
-    precio: 15000,
+      "https://stiersuplementos.ar/wp-content/uploads/2023/11/NutrilabCombo.jpeg",
+    descripcion: "Proteina Nutrilab de 1kg sabor a elección + creatina monohidratada nutrilab 300 gr (30 servicios) saborizada, con agregados de aminoácidos. Combo precio/calidad económico, lo mejor que vas a conseguir en ese precio",
+    precio: 30600,
+    categoria: "combos",
   },
   {
     id: 7,
-    nombre: "Protein Bar",
+    nombre: "Proteina DOYPACK 907kg - Star Nutrition",
     imagen:
-      "https://www.enasport.com/cdn/shop/files/ProteinBar_choco_caja_7ea0bdc3-d83e-4a0a-b341-063e31dd507c_800x.jpg?v=1699874695",
-    descripcion:
-      "Protein Bar es el snack saludable para todos los días. Constituye una muy buena fuente de proteínas y carbohidratos ideal para completar una larga rutina de ejercicios, en un formato fácil de transportar y consumir. Dos barritas de Protein Bar aportan 30 gramos de proteína pura por día. Constituye un alimento funcional, que al estar reforzado con vitaminas y minerales, permite formar masa muscular al mismo tiempo que provee de energía.",
-    precio: 20800,
+      "https://stiersuplementos.ar/wp-content/uploads/2023/10/DOYPACK-CH.png",
+    descripcion: "Compuesta por ultra concentrado, aislado e hidrolizado de suero de máxima pureza, obtenidos por métodos no agresivos que garantizan la calidad y estabilidad del producto. Su agradable sabor y alta disolución lo convierten en la opción inteligente a la hora de agregar proteínas de alto valor biológico a nuestra dieta, o como parte de un programa nutricional deportivo. 100% NATURAL GRASS FED PROTEIN Fuente natural de aminoácidos esenciales, aminoácidos de cadena ramificada y Glutamina.",
+    precio: 30000,
+    categoria: "proteinas",
   },
   {
     id: 8,
-    nombre: "Shaker ENA",
+    nombre: "Creatina 300gr - Star Nutrition",
     imagen:
-      "https://www.enasport.com/cdn/shop/products/Shaker_truemade_800x.jpg?v=1640024186",
+      "https://stiersuplementos.ar/wp-content/uploads/2023/10/CREA-STAR-300.png",
     descripcion:
-      "SHAKER Para un batido sin grumos;Ayuda a romper las partículas de polvo. Es ideal para aquellos productos en polvo que requieran una disolución excelente, tanto en agua como en leche. El Vaso Batidor presenta en su interior un aro en forma de estrella que rompe las partículas de polvo disolviéndolas con el batido. Con nuestro exclusivo vaso shaker, mezclar incluso las más espesas de las proteínas es facilísimo.",
-    precio: 5200,
+      "La creatina micronizada es la unión de tres aminoácidos que ofrece mayores ventajas que la creatina normal, mejorando su asimilación. La creatina monohidrato es recomendada durante un plan de entrenamiento para aumentar la fuerza, resistencia y recuperación.",
+    precio: 32000,
+    categoria: "creatinas",
   },
   {
     id: 9,
-    nombre: "Shaker PLUS",
+    nombre: "Combo Star",
     imagen:
-      "https://www.enasport.com/cdn/shop/products/Shaker_truemade_PLUS_800x.jpg?v=1640024209",
-    descripcion:
-      "SHAKER (Con pastillero y compartimiento para proteínas.Para un batido sin grumos. Por el momento solo en COLOR BLANCO, Ayuda a romper las partículas de polvo.Es ideal para aquellos productos en polvo que requieran una disolución excelente, tanto en agua como en leche. El Vaso Batidor presenta en su interior un aro en forma de estrella que rompe las partículas de polvo disolviéndolas con el batido. Con nuestro exclusivo vaso shaker, mezclar incluso las más espesas de las proteínas es facilísimo.",
-    precio: 5700,
+      "https://stiersuplementos.ar/wp-content/uploads/2023/11/WhatsApp-Image-2024-02-28-at-15.43.49.jpeg",
+    descripcion: "Proteina Star nutrition de 2lbs sabor a elección versión DOYPACK + creatina monohidratada y micronizada Star nutrition 300 gr (60 servicios) 100% pura. Combo precio/calidad premium, compite con gold nutrition en calidad",
+    precio: 55800,
+    categoria: "combos",
   },
   {
     id: 10,
-    nombre: "Shaker Premium",
+    nombre: "WHEY PROTEIN 7900 - Gentech",
     imagen:
-      "https://www.enasport.com/cdn/shop/products/Shaker_truemade_2021_800x.jpg?v=1647874026",
+      "https://www.gentech.com.ar/web/image/product.product/4040/image_1024/%5BGTWPCHM00%5D%20WHEY%20PROTEIN%207900%20%20%28Chocolate%2C%201%20kg.%29?unique=1e8cf7c",
     descripcion:
-      "SHAKER Premium. Para un batido sin grumos. Nuevo modelo con tapa a rosca y resorte mezclador.Ideal para llevar tu propia bebida, o suplementos en polvo que quieras diluir fácilmente y sin grumos, ya que trae un batidor de acero inoxidable pulido oval para facilitar el batido y su limpieza.",
-    precio: 18600,
+      "La proteína de suero de leche, también conocida como whey protein, es uno de los suplementos más utilizados cuando el objetivo es aumentar masa muscular o hipertrofiar. ¿La razón? Son una excelente fuente de aminoácidos esenciales (contiene 9) y elevan los aminoácidos plasmáticos. Son una herramienta muy beneficiosa para el deportista que realiza un esfuerzo extenuante y que, para compensar este entrenamiento, debe realizar de 5 a 6 comidas saludables diarias. Por lo general, la forma de tomar esta suplementación depende del deporte que se realice.",
+    precio: 22000,
+    categoria: "proteinas",
   },
+  {
+    id: 11,
+    nombre: "CREATINA MONOHIDRATO x 250 GRAMOS - Gentech",
+    imagen:
+      "https://www.gentech.com.ar/web/image/product.product/835/image_1024/%5BGTCPSN250%5D%20CREATINA%20MONOHIDRATO%20x%20250%20GRAMOS%20%20?unique=1e8cf7c",
+    descripcion:
+      "La Creatina Monohidrato de Gentech destaca como un suplemento deportivo de primera categoría, reconocido por sus notables efectos positivos en el rendimiento deportivo, el crecimiento muscular y la fuerza. Este compuesto, que constituye la mayor parte de las reservas de creatina en el músculo esquelético, desempeña un papel esencial en la síntesis de ATP, la principal fuente de energía celular.Como suplemento deportivo clave de Gentech, la Creatina Monohidrato no solo mejora el rendimiento atlético, sino que también favorece el crecimiento muscular, aumenta la fuerza y facilita la recuperación muscular post-entrenamiento. La incorporación estratégica de este suplemento a la rutina no solo optimiza la disponibilidad de energía a nivel celular, sino que también favorece la síntesis de aminoácidos esenciales, fundamentales para el desarrollo muscular.",
+    precio: 30000,
+    categoria: "creatinas",
+  },
+  {
+    id: 12,
+    nombre: "Proteina 2lbs - Gold Nutrition",
+    imagen:
+      "https://goldnutrition.com.ar/images/2022/12/07/100_whey_protein_gold_nutrition_proteina_doypack_suplemento_deportivo.png",
+    descripcion:
+      "100% WHEY PROTEIN es un Blend Premium de proteína concentrada, hidrolizada y aislada con 28gs por servicio y un alto aporte de aminoácidos BCAAs y L-Glutamines. Es un excelente suplemento proteico multifuncional y nutritivo que aporta las bases para la construcción y reparación muscular. BAJA EN CARBOHIDRATOS Y BAJA EN CALORÍAS. La calidad de los ingredientes, la eficacia y el delicioso sabor conseguido en este suplemento, es lo que lo hace el MÁS VENDIDO.",
+    precio: 28500,
+    categoria: "proteinas",
+  },
+  {
+    id: 13,
+    nombre: "100% Monohidrato de Creatina - Gold Nutrition",
+    imagen:
+      "https://goldnutrition.com.ar/images/2022/03/28/creatina_monohidrato_gold_nutrition_doypack.png",
+    descripcion:
+      "CREATINE MONOHYDRATE de GOLD NUTRITION contiene la fórmula de creatina más avanzada. Un potente aporte de energía extra para los músculos en deportes anaeróbicos y aeróbicos que precisan periodos de fuerza cortos e intensos. Aproximadamente el 95% de la creatina del cuerpo se encuentra en el músculo esquelético",
+    precio: 32000,
+    categoria: "creatinas",
+  },
+  {
+    id: 14,
+    nombre: "Combo GOLD",
+    imagen:
+      "https://stiersuplementos.ar/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-27-at-14.26.37.jpeg",
+    descripcion:
+      "Proteina gold nutrition de 2lbs sabor a elección + creatina Gold 300 gr (60 servicios) sin sabor monohidratada y micronizada. Combo excelente calidad premium muy recomendado por su precio, se recomienda por encima de star al haber quedado en mejor precio",
+    precio: 54500,
+    categoria: "combos",
+  },
+  
 ];
 
-// Función para guardar la lista de productos en el almacenamiento local
 const guardarProductosLS = (productos) => {
   localStorage.setItem("productos", JSON.stringify(productos));
 };
 
-// Función para obtener la lista de productos desde el almacenamiento local
 const obtenerProductosLS = () => {
   return JSON.parse(localStorage.getItem("productos")) || [];
 };
 
-// Función para guardar el carrito de compras en el almacenamiento local
 const guardarCarritoLS = (productos) => {
   localStorage.setItem("carrito", JSON.stringify(productos));
 };
 
-// Función para obtener el carrito de compras desde el almacenamiento local
 const obtenerCarritoLS = () => {
   return JSON.parse(localStorage.getItem("carrito")) || [];
 };
 
-// Función para obtener el ID del producto desde el almacenamiento local
 const obtenerIdProductoLS = () => {
   return JSON.parse(localStorage.getItem("producto")) || 0;
 };
 
-// Función para obtener la cantidad total de productos en el carrito
+const obtenerIdCatLS = () => {
+  return JSON.parse(localStorage.getItem("categoria")) || "todos";
+};
+
 const cantTotalProductos = () => {
   const carrito = obtenerCarritoLS();
 
   return carrito.length;
 };
 
-// Función para renderizar la cantidad total de productos en el carrito en la interfaz
-const renderTotalCarrito = () => {
-  document.getElementById("totalCarrito").innerHTML = cantTotalProductos();
+const sumaTotalProductos = () => {
+  const carrito = obtenerCarritoLS();
+
+  return carrito.reduce((acumulador, item) => (acumulador += item.precio), 0);
 };
 
-// Función para almacenar el ID del producto seleccionado en el almacenamiento local
+const eliminarCarrito = () => {
+  localStorage.removeItem("carrito");
+  renderCarrito();
+  renderBotonCart();
+  notificacion("Carrito Eliminado");
+};
+
 const verProducto = (id) => {
   localStorage.setItem("producto", JSON.stringify(id));
 };
 
-// Función para obtener los detalles del producto seleccionado desde el almacenamiento local
-const obtenerProductoLS = () => {
+const verProductosPorCat = (id) => {
+  console.log(id);
+  localStorage.setItem("categoria", JSON.stringify(id));
+};
+
+const buscarProducto = () => {
   const productos = obtenerProductosLS();
   const id = obtenerIdProductoLS();
   const producto = productos.find((item) => item.id === id);
@@ -143,5 +197,62 @@ const obtenerProductoLS = () => {
   return producto;
 };
 
-// Guardar la lista de productos en el almacenamiento local al inicio
+const agregarProductoAlCart = () => {
+  const producto = buscarProducto(); // Producto seleccionado
+  const carrito = obtenerCarritoLS(); // []
+  carrito.push(producto);
+  guardarCarritoLS(carrito);
+  renderBotonCart();
+  notificacion("Producto agregado");
+};
+
+const eliminarProductoDelCart = (id) => {
+  const carrito = obtenerCarritoLS();
+  const index = carrito.findIndex((item) => item.id === id);
+
+  if (index !== -1) {
+    carrito.splice(index, 1);  // Elimina solo la primera instancia del producto
+    guardarCarritoLS(carrito);
+    renderCarrito();
+    renderBotonCart();
+    notificacion("Producto Eliminado");
+  }
+};
+
+const renderBotonCart = () => {
+  document.getElementById("totalCarrito").innerHTML = cantTotalProductos();
+};
+
+const finalizarCompra = () => {
+  Swal.fire({
+    title: "Gracias por tu compra",
+    html: `<p>El total a pagar es: <b>$${sumaTotalProductos()}</b></p>`,
+    imageUrl:
+      "https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/wordpress/web/app/uploads/sites/5/2021/03/Burger-King-Logo-CMS.png",
+    imageWidth: 200,
+    imageHeight: 200,
+    imageAlt: "Burger King",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Aceptar",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      eliminarCarrito();
+    };
+  });
+
+  
+};
+
+const notificacion = (texto) => {
+  Swal.fire({
+    position: "top-end",
+    icon: "info",
+    title: texto,
+    showConfirmButton: false,
+    timer: 2500,
+  });
+};
+
 guardarProductosLS(productos);

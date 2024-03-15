@@ -1,20 +1,21 @@
-// Función para renderizar los detalles de un producto en la interfaz
 function renderProducto() {
-  // Obtener el producto seleccionado desde el almacenamiento local
-  const producto = obtenerProductoLS();
+  const producto = buscarProducto();
+  let contenido = `<div class='row'>
+  <div class="col-md-6 offset-md-3 text-center">
+  <img src="${producto.imagen}" alt="${producto.nombre}" class="img-fluid" />
+  </div>
+  </div>
+  <div class='row'>
+  <div class="col-md-8 offset-md-2 text-center">
+  <h2 class="colorFuente roboto-bold">${producto.nombre}</h2>
+  <p class="colorFuente roboto-medium">${producto.descripcion}</p>
+  <p class="colorFuente roboto-bold">$${producto.precio}</p>
+  <p><button class="btn colorFondo2 position-relative" onclick="agregarProductoAlCart()" >(+) Agregar </button></p>
+  </div>
+  </div>`;
 
-  // Crear el contenido HTML con los detalles del producto
-  let contenido = `<div class="col-md-6 offset-md-3 text-center">
-    <img src="${producto.imagen}" alt="${producto.nombre}" class="img-fluid" />
-    <p class="colorFuente roboto-bold">${producto.nombre}</p>
-    <p class="colorFuente roboto-medium">${producto.descripcion}</p>
-    <p class="colorFuente roboto-bold">$${producto.precio}</p>
-    </a>
-    </div>`;
-
-  // Insertar el contenido en el elemento con el id "producto" en la interfaz
   document.getElementById("producto").innerHTML = contenido;
 }
 
-// Llamar a la función para renderizar los detalles del producto al cargar la página
 renderProducto();
+renderBotonCart();
