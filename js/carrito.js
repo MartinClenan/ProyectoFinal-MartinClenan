@@ -15,7 +15,7 @@ function renderCarrito() {
             <td class="text-start"><img src="${producto.imagen}" alt="${producto.nombre}" width="64" /></td>
             <td class="text-start">${producto.nombre}</td>
             <td class="text-start"><b>$${producto.precio}</b></td>
-            <td class="text-end"><button class="btn colorFondo2 btn-sm" onclick="eliminarProductoDelCart(${producto.id})" title="Eliminar Producto">Eliminar <img src="/img/file-x-fill.svg" alt="Eliminar Producto" width="24" /></button></td>
+            <td class="text-end"><button class="btn colorFondo2 btn-sm" onclick="eliminarProductoDelCart(${producto.id})" title="Eliminar Producto">Eliminar <img src="./img/file-x-fill.svg" alt="Eliminar Producto" width="24" /></button></td>
             </tr>`;
         }
 
