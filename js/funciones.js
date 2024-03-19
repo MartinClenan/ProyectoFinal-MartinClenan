@@ -231,7 +231,7 @@ const finalizarCompra = () => {
       "../img/salud_integral.jpg",
     imageWidth: 200,
     imageHeight: 200,
-    imageAlt: "salud integral",
+    imageAlt: "s",
     showCancelButton: true,
     confirmButtonColor: "#3085d6",
     cancelButtonColor: "#d33",
