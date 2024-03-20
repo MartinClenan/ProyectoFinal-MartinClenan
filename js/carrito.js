@@ -23,7 +23,7 @@ function renderCarrito() {
     contenido += `<tr>
     <td class="text-center" colspan="2"><b> Total a pagar </b></td>
     <td><b>$${sumaTotalProductos()}</b></td> 
-    <td>&nbsp;</td>
+    <td class="text-end"><button class="btn  btn-danger" onclick="finalizarCompra()"  title="Finalizar compra"><img src="img/cart-check-fill.svg" alt="Eliminar Producto" width="28"/> Finalizar compra</button></td>
     </tr>
     </tbody> </table>`
 

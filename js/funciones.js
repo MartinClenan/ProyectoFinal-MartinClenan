@@ -132,6 +132,7 @@ const productos = [
     localStorage.removeItem("carrito");
     renderCarrito();
     renderBotonCarrito();
+    notificacion("Carrito Eliminado Correctamente");
   }
 
 
@@ -178,6 +179,7 @@ const productos = [
     // Volver a renderizar el carrito para reflejar los cambios
     renderCarrito();
     renderBotonCarrito();
+    notificacion("Eliminado Correctamente");
 }
   
   
@@ -185,5 +187,30 @@ const productos = [
       document.getElementById("totalCarrito").innerHTML = cantTotalProductos();
   }
   
+  const finalizarCompra = () => {
+    Swal.fire({
+        title: "Compra Finalizada!",
+        text: "Total a pagar: $" + sumaTotalProductos(),
+        imageUrl: "./img/proteinas2.png",
+        imageWidth: 200,
+        imageHeight: 200,
+        imageAlt: "Salud Integral",
+        confirmButtonText: "Aceptar",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          eliminarCarrito();
+        }
+      })
+    
+    
+  }
+
+  const notificacion = (texto) => {
+    Toastify({
+        text: texto,
+        duration: 2000,
+        backgroundColor: "#dc3545" 
+    }).showToast();
+}
   
   guardarProductosLS(productos);
